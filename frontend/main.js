@@ -3,12 +3,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-const localApi = '';
+const localApi = 'http://localhost:7071/api/Counter';
 const functionApi = ''; 
 
 const getVisitCount = () => {
     let count = 30;
-    fetch(functionApi)
+    fetch(localApi)
     .then(response => {
         return response.json()
     })

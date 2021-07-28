@@ -1,10 +1,6 @@
-using System.Net;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
-using System.Linq;
-using System.Collections.Generic;
-using System;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
 
