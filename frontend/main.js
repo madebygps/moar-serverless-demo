@@ -3,12 +3,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-const localApi = 'http://localhost:7071/api/Counter';
-const functionApi = ''; 
+const localFunctionURL = 'http://localhost:7071/api/Counter'
+const productionFunctionURL = 'https://moarserverless.azurewebsites.net/api/Counter?code=53CeMURqHdaBj9p8yI5HdOSiaCDFSARcltPvZWURaylYn8dRjpQ0Cg=='; 
 
 const getVisitCount = () => {
     let count = 30;
-    fetch(localApi)
+    fetch(productionFunctionURL)
     .then(response => {
         return response.json()
     })
