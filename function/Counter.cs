@@ -11,7 +11,7 @@ namespace Company.Function
         [Function("Counter")]
         [CosmosDBOutput("%CosmosDb%", "%CosmosCollIn%", ConnectionStringSetting = "CosmosDBConnection")]
     
-        public static async Task<object> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req,
+        public static object Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req,
         [CosmosDBInput(
                 "%CosmosDb%", "%CosmosCollIn%",
                 ConnectionStringSetting = "CosmosDBConnection",

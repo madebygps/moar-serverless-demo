@@ -8,7 +8,7 @@ const productionFunctionURL = 'https://moarserverless.azurewebsites.net/api/Coun
 
 const getVisitCount = () => {
     let count = 30;
-    fetch(productionFunctionURL)
+    fetch(localFunctionURL)
     .then(response => {
         return response.json()
     })
