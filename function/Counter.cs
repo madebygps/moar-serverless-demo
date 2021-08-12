@@ -9,12 +9,12 @@ namespace Company.Function
     public static class Counter
     {
         [Function("Counter")]
-        [CosmosDBOutput("%CosmosDb%", "%CosmosCollIn%", ConnectionStringSetting = "CosmosDBConnection")]
+        [CosmosDBOutput("%DatabaseName%", "%CollectionName%", ConnectionStringSetting = "CosmosDBConnectionString")]
     
         public static object Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req,
         [CosmosDBInput(
-                "%CosmosDb%", "%CosmosCollIn%",
-                ConnectionStringSetting = "CosmosDBConnection",
+                "%DatabaseName%", "%CollectionName%",
+                ConnectionStringSetting = "CosmosDBConnectionString",
                 Id = "1",
                 PartitionKey = "1")] CounterJson input,
 
