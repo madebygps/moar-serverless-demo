@@ -22,7 +22,6 @@ The Azure Function is in the function folder.
 1. Add the [CosmosDB package](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/) to your function.
 2. Add a local.settings.json file with your Cosmos DB connection string, database name, and collection name. 
     ```json
-    
         "CosmosDBConnectionString":"",
         "DatabaseName":"moarserverless",
         "CollectionName":"counter",
@@ -40,3 +39,7 @@ The Azure Function is in the function folder.
 
 - [An overview of Azure Serverless](https://youtu.be/maH1Vn27w60)
 - [Create an Azure Cosmos Account](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal)
+- [Azure Functions triggers and bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
+- [Azure Functions Networking Options](https://docs.microsoft.com/azure/azure-functions/security-concepts)
+- [Securing Azure Functions](https://docs.microsoft.com/azure/azure-functions/security-concepts)
+- [Azure Functions Consumption Plan](https://docs.microsoft.com/azure/azure-functions/consumption-plan)
