@@ -43,3 +43,4 @@ The Azure Function is in the function folder.
 - [Azure Functions Networking Options](https://docs.microsoft.com/azure/azure-functions/security-concepts)
 - [Securing Azure Functions](https://docs.microsoft.com/azure/azure-functions/security-concepts)
 - [Azure Functions Consumption Plan](https://docs.microsoft.com/azure/azure-functions/consumption-plan)
+- [Azure Functions Cloud Skills Challenge](aka.ms/azurefunctionscsc)
